@@ -8,13 +8,12 @@ import com.aspose.cad.Image;
 import com.aspose.cad.ImageOptionsBase;
 import com.aspose.cad.examples.Utils.Utils;
 import com.aspose.cad.fileformats.dgn.DgnImage;
-import com.aspose.cad.imageoptions.DgnRasterizationOptions;
 import com.aspose.cad.imageoptions.JpegOptions;
 
-public class ExportEmbeddedDGN
-{
-    public static void main(String[] args)
+public class ExportEmbeddedDGN {
+  public static void main(String[] args)
     {
+      String outDir = "";
         // Input and Output file paths
         String fileName = "BlockRefDgn.dwg";
        //ExStart:ExportEmbeddedDGN    
@@ -29,8 +28,6 @@ public class ExportEmbeddedDGN
        pdfOptions.VectorRasterizationOptions = rasterizationOptions;
 
        cadImage.Save(outDir + fileName + ".pdf", pdfOptions);
-        }
-        }
-      //ExEnd:ExportEmbeddedDGN
+     }
     }
 }
